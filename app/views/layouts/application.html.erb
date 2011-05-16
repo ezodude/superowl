@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmugOwl.me</title>
+  <%= stylesheet_link_tag :all %>
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tag %>
+  
+  <style>
+    body { /* author picture needs to get inserted here */
+      background: white url("http://farm2.static.flickr.com/1019/739665930_cffb0e5ccc_b.jpg") no-repeat 0 0;
+      background-size: 100%;
+    }
+    
+    .intro-container{
+      margin-top: 100px;
+      background: black;
+      color: white;
+      -moz-border-radius: 15px; /* Firefox */
+      -webkit-border-radius: 15px; /* Safari, Chrome */
+      border-radius: 15px; /* CSS3 */
+    }
+    
+    .intro{
+      font: 40px/44px 'Droid Sans', arial, serif;
+      padding: 10px 15px;
+      color: #FF0000;
+    }
+    
+    .registration{
+      margin-top: 10px;
+      font: 14px 'Droid Sans', arial, serif;
+      padding: 10px 15px;
+      background: black;
+    }
+    
+    .definition{
+      margin: 0;
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+    
+    em{
+      font-size: 18px;
+      font-style: normal;
+      color: white;
+    }
+    
+    .transparent_class {
+      /* IE 8 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+      /* IE 5-7 */
+      filter: alpha(opacity=70);
+
+      /* Netscape */
+      -moz-opacity: 0.7;
+
+      /* Safari 1.x */
+      -khtml-opacity: 0.7;
+
+      /* Good browsers */
+      opacity: 0.7;
+    }
+/*    div {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      width: 60%;
+      font: 36px/40px 'Droid Sans', arial, serif;
+      padding: 10px 15px;
+      background: white;
+      opacity:0.7;
+    }
+    div a {
+      color: #E53378;    
+    }
+    div a:hover {
+      color: white;
+      background: #E53378;    
+      text-decoration: none;
+    }
+    div span {
+      text-decoration: underline;
+    }
+  
+    img.logo {
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+    }
+*/  </style>
+  
+</head>
+<body class="transparent_class">
+
+  <div class="showgrid container">
+    <%= yield %>
+  </div>
+
+</body>
+</html>

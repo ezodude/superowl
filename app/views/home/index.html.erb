@@ -1,0 +1,46 @@
+<div class="span-15 intro-container last">
+  <div class="intro">Smug Owl <em>great audio for the urban commuter</em></div>
+  <div class="definition">
+    [smuhg oul]
+    <br/>
+    - noun
+    <br/>
+    1. Urban commuter who listens to great audio content on the go,
+    <br/>whilst supporting the people that make it.
+  </div>
+  <div class="registration">
+    <%= form_for(@interested_user) do |f| %>
+      <% if @interested_user.errors.any? %>
+        <div id="errorExplanation">
+          <h2><%= pluralize(@interested_user.errors.count, "error") %> prohibited this post from being saved:</h2>
+          <ul>
+          <% @interested_user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <% if flash[:notice] %>
+        <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
+      <% if flash[:error] %>
+        <div class="error">The email address <%= flash[:error] %></div>
+      <% end %>
+      <p>
+        Coming soon, register for updates:
+        <br/>
+        <%= f.text_field(:email, {:class => "title", :maxlength => 100}) %>
+        <%= f.submit 'Go', :name => 'go' %>
+      </p>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  jQuery(document).ready(function() {
+    jQuery('#interested_user_email').focus(function(){
+      $(this).val("");
+      return false;
+    });
+  });
+</script>
