@@ -37,4 +37,19 @@ after_fork do |server, worker|
   rescue => e
     RAILS_DEFAULT_LOGGER.error("Couldn't connect to Mongo Server.\n#{e.backtrace.join('\n')}")
   end
+  
+  begin  
+    uid, gid = Process.euid, Process.egid  
+    user, group = 'deploy', 'deploy'
+    target_uid = Etc.getpwnam(user).uid  
+    target_gid = Etc.getgrnam(group).gid  
+    worker.tmp.chown(target_uid, target_gid)  
+    if uid != target_uid || gid != target_gid  
+      Process.initgroups(user, target_gid)  
+      Process::GID.change_privilege(target_gid)  
+      Process::UID.change_privilege(target_uid)  
+    end  
+  rescue => e  
+    raise e  
+  end
 end

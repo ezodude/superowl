@@ -46,3 +46,18 @@ namespace :deploy do
     run "cd #{current_path}; [ -f tmp/pids/unicorn.pid ] && kill -USR2 `cat tmp/pids/unicorn.pid` || /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
   end
 end
+
+# namespace :deploy do
+#   task :stop, :roles => :app do
+#     run "cd #{current_path} && #{try_sudo} kill -QUIT `cat tmp/pids/unicorn.pid`"
+#   end 
+# 
+#   task :start, :roles => :app do
+#     run "cd #{current_path} && #{try_sudo} /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
+#   end
+# 
+#   desc "restart unicorn"
+#   task :restart, :roles => :web do
+#     run "cd #{current_path}; [ -f tmp/pids/unicorn.pid ] && #{try_sudo} kill -USR2 `cat tmp/pids/unicorn.pid` || #{try_sudo} /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
+#   end
+# end
