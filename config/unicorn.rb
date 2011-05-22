@@ -6,7 +6,7 @@ application = "superowl"
 app_path = "/var/www/#{application}/current"
 
 listen "/tmp/unicorn.sock", :backlog => 1024
-pid "#{app_path}/shared/pids/unicorn.pid"
+pid "#{app_path}/../shared/pids/unicorn.pid"
 
 # Set the path of the log files inside the log folder of the testapp
 stderr_path "#{app_path}/log/unicorn.stderr.log"
