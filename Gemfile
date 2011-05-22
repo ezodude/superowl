@@ -8,7 +8,7 @@ gem "mongo_mapper", ">=0.8.6"
 gem "bson_ext", ">=1.3.1"
 
 # Use unicorn as the web server
-gem 'unicorn'
+# gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'

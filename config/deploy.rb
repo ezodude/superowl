@@ -20,45 +20,8 @@ set :deploy_via, :remote_cache
 set :deploy_to, "/var/www/#{application}"
 server '109.74.193.80', :web, :app, :db, :primary => true
 
-# If you are using Passenger mod_rails uncomment this:
-# if you're still using the script/reapear helper you will need
-# these http://github.com/rails/irs_process_scripts
-
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
-
 namespace :deploy do
-  task :stop, :roles => :app do
-    run "cd #{current_path} && kill -QUIT `cat tmp/pids/unicorn.pid`"
-  end 
-
-  task :start, :roles => :app do
-    # run "cd #{current_path} && /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
-    run "cd #{current_path} && bundle exec unicorn_rails -c config/unicorn.rb -E production -D"
-  end
-
-  desc "restart unicorn"
-  task :restart, :roles => :web do
-    run "cd #{current_path}; [ -f tmp/pids/unicorn.pid ] && kill -USR2 `cat tmp/pids/unicorn.pid` || bundle exec unicorn_rails -c config/unicorn.rb -E production -D"
-  end
+  task :start do ; end
+  task :stop do ; end
+  task :restart do ; end
 end
-
-# namespace :deploy do
-#   task :stop, :roles => :app do
-#     run "cd #{current_path} && #{try_sudo} kill -QUIT `cat tmp/pids/unicorn.pid`"
-#   end 
-# 
-#   task :start, :roles => :app do
-#     run "cd #{current_path} && #{try_sudo} /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
-#   end
-# 
-#   desc "restart unicorn"
-#   task :restart, :roles => :web do
-#     run "cd #{current_path}; [ -f tmp/pids/unicorn.pid ] && #{try_sudo} kill -USR2 `cat tmp/pids/unicorn.pid` || #{try_sudo} /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
-#   end
-# end

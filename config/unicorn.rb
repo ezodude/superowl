@@ -3,30 +3,20 @@ preload_app true
 timeout 30
 
 application = "superowl"
+app_path = "/var/www/#{application}"
 
 listen "/tmp/unicorn.sock", :backlog => 1024
 
-pid_path = Rails.env == "production" ? 
-                "/var/www/#{application}/shared/pids/unicorn.pid" : 
-                "#{RAILS_ROOT}/tmp/pids/unicorn.pid"
+pid_path = Rails.env == "production" ? "#{app_path}/shared/pids/unicorn.pid" : "#{RAILS_ROOT}/tmp/pids/unicorn.pid"
 
 pid pid_path
 
 # Set the path of the log files inside the log folder of the testapp
-stderr_path "#{RAILS_ROOT}/log/unicorn.stderr.log"
-stdout_path "#{RAILS_ROOT}/log/unicorn.stdout.log"
+stderr_path "#{app_path}/log/unicorn.stderr.log"
+stdout_path "#{app_path}/log/unicorn.stdout.log"
 
 before_fork do |server, worker|
   MongoMapper.database.connection.close 
-  
-  old_pid = '/tmp/unicorn.pid.oldbin'
-  if File.exists?(old_pid) && server.pid != old_pid
-    begin
-      Process.kill("QUIT", File.read(old_pid).to_i)
-    rescue Errno::ENOENT, Errno::ESRCH
-    # someone else did our job for us
-    end
-  end
 end
 
 after_fork do |server, worker|
