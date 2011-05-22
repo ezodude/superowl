@@ -3,7 +3,7 @@ preload_app true
 timeout 30
 
 application = "superowl"
-app_path = "/var/www/#{application}"
+app_path = "/var/www/#{application}/current"
 
 listen "/tmp/unicorn.sock", :backlog => 1024
 pid "#{app_path}/shared/pids/unicorn.pid"
