@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'mongo'
+# require 'mongo'
 
 source 'http://rubygems.org'
 
