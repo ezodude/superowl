@@ -38,12 +38,13 @@ namespace :deploy do
   end 
 
   task :start, :roles => :app do
-    run "cd #{current_path} && /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
+    # run "cd #{current_path} && /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
+    run "cd #{current_path} && bundle exec unicorn_rails -c config/unicorn.rb -E production -D"
   end
 
   desc "restart unicorn"
   task :restart, :roles => :web do
-    run "cd #{current_path}; [ -f tmp/pids/unicorn.pid ] && kill -USR2 `cat tmp/pids/unicorn.pid` || /usr/local/bin/unicorn_rails -c config/unicorn.rb -E production -D"
+    run "cd #{current_path}; [ -f tmp/pids/unicorn.pid ] && kill -USR2 `cat tmp/pids/unicorn.pid` || bundle exec unicorn_rails -c config/unicorn.rb -E production -D"
   end
 end
 
