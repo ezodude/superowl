@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
 gem "mongo_mapper", ">=0.8.6"
+gem "bson_ext", ">=1.3.1"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git:/ /github.com/rails/rails.git'

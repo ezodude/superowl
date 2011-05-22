@@ -1,9 +1,9 @@
 require "bundler/capistrano"
 
-set :application, "smugowl"
+set :application, "superowl"
 
 default_run_options[:pty] = true  # Must be set for the password prompt from git to work
-set :repository, "git@github.com:the-experimenters/smugowl.me.git"  # Your clone URL
+set :repository, "git@github.com:the-experimenters/#{application}.git"  # Your clone URL
 set :scm, "git"
 
 set :user, "deploy"  # The server's user for deploys

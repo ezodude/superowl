@@ -30,6 +30,7 @@ GEM
     activesupport (3.0.7)
     arel (2.0.10)
     bson (1.3.1)
+    bson_ext (1.3.1)
     builder (2.1.2)
     capistrano (2.6.0)
       highline
@@ -81,7 +82,7 @@ GEM
       activesupport (= 3.0.7)
       rake (>= 0.8.7)
       thor (~> 0.14.4)
-    rake (0.8.7)
+    rake (0.9.0)
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
@@ -91,6 +92,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext (>= 1.3.1)
   capistrano
   mongo_mapper (>= 0.8.6)
   rails (= 3.0.7)
