@@ -4,11 +4,22 @@ class InterestedUsersController < ApplicationController
     
     if interested_user.save
       #InterestedUserMailer.welcome_email(interested_user).deliver
+      EmailSignupTracker.track_signup(interested_user.email, ip_address_from(request), time=Time.now.utc.to_i)
       flash[:notice] = "Super Owl is hatching and we're keeping you in the loop :)"
     else
       flash[:error] = "#{interested_user.errors[:email].first}!"
     end
     
     redirect_to root_url
+  end
+  
+private
+
+  def ip_address_from(request)
+    result = if !request.env['HTTP_X_FORWARDED_FOR'].blank?
+      request.env['HTTP_X_FORWARDED_FOR']
+    else
+      request.env['REMOTE_ADDR']
+    end.split(',').first.strip
   end
 end
