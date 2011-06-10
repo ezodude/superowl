@@ -33,7 +33,7 @@ h4 { font-size:24px; }
 h5 { font-size:18px; }
 h6 { font-size:18px; }
 
-#wrapper { width:940px; margin:0 auto; min-height:500px; position:relative; padding:60px 0 0px 0; }
+#wrapper { width:940px; margin:0 auto; min-height:500px; position:relative; padding:25px 0 0px 0; }
 #sidebar { width:400px; float:left; text-align:center; }
 #content  { width:475px; padding-right:30px; float:right; padding-top:5px; }
 

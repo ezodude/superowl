@@ -37,7 +37,7 @@
       h5 { font-size:18px; }
       h6 { font-size:18px; }
 
-      #wrapper { width:940px; margin:0 auto; min-height:500px; position:relative; padding:60px 0 0px 0; }
+      #wrapper { width:940px; margin:0 auto; min-height:500px; position:relative; padding:25px 0 0px 0; }
       #sidebar { width:400px; float:left; text-align:center; }
       #content  { width:475px; padding-right:30px; float:right; padding-top:5px; }
 
@@ -49,6 +49,7 @@
       #content p.highlight { margin:12px 0 0 0; color:#008f0a; font-size:14px; font-weight:bold; }
 
       #sidebar p.copy { margin:0; padding:0; font-size:11px; color:#666; line-height:normal; } 
+      #sidebar img { margin-top:100px;} 
       #sidebar p.designby { color:#bababa; margin:0; padding:0; font-size:11px; }
       #sidebar p.designby a { color:#bababa; text-decoration:none; }
       #sidebar p.designby a:hover { color:#333; text-decoration:none; }
@@ -91,14 +92,11 @@
           </li>
         </ul>
         <p class="highlight">
-          For now, have a brilliant day - The <a href="http://superowl.me/" target="_blank">Super Owl</a> Team :)
+          For now, have a brilliant day - The <a href="<%= @url %>/" target="_blank">Super Owl</a> Team :)
         </p>
       </div><!-- content #end -->
       <div id="sidebar">
-        <img src="http://0.0.0.0:3000/images/emailowl.png" alt="" />
-        <p class="copy">
-          &copy; 2011 <a href="http://said.fm/" target="_blank">Said.fm</a> productions All rights reserved.
-        </p>
+        <img src="<%= @url %>/images/emailowl.png" alt="" />
       </div>
     </div><!-- wrapper #end -->
   </body>

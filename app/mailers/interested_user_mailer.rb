@@ -3,7 +3,7 @@ class InterestedUserMailer < ActionMailer::Base
   
   def welcome_email(interested_user)
     @user = interested_user
-    @url  = "http://superowl.me"
+    @url  = (RAILS_ENV == "production" ? "http://superowl.me" : "http://0.0.0.0:3000")
     mail(:to => interested_user.email,
          :subject => "Thanks for Signing Up for Updates!")
   end
