@@ -1,86 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SuperOwl.me</title>
-  <%= stylesheet_link_tag :all %>
+  <head>
+    <title>SuperOwl.me</title>
+    <%= stylesheet_link_tag "style" %>
   
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-  <%= csrf_meta_tag %>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <%= csrf_meta_tag %>
   
-  <style>
-    body { /* author picture needs to get inserted here */
-      background: #000 url("/images/superowl.jpg") no-repeat 0 0;
-      background-size: 100%;
-      width: 100%;
-      display: table;
-    }
-    
-    .intro-container{
-      margin-top: 100px;
-      background: black;
-      color: white;
-    }
-    
-    .intro{
-      font: 40px/44px 'Droid Sans', arial, serif;
-      padding: 10px 15px;
-      color: #FF0000;
-    }
-    
-    .registration{
-      margin-top: 10px;
-      font: 14px 'Droid Sans', arial, serif;
-      padding: 10px 15px;
-      background: black;
-    }
-    
-    .definition{
-      margin: 0;
-      font-size: 16px;
-      padding: 10px 15px;
-    }
-    
-    em{
-      font-weight: bold;
-    }
-    
-    .transparent_class {
-      /* IE 8 */
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    <style type="text/css">
+      html, body { 
+        background-color: #FFFFFF; 
+        font-size: 14px ;
+        font-family: 'Droid Sans', Arial;
+        color: #555555;
+      }
+      
+      #sidebar p.copy { color: #555555; font-size: 12px}
+      #content p.highlight { text-decoration:none; color:#444444;}
+      #content p.soon { font-size: 14px;}
+      a { text-decoration:underline; color:#0066cc;}
+      a:hover { text-decoration:none; color:#0066cc; }
+      
+      .notice{ color: #444444; }
+      .error{color: #990000;}
+      .error, .notice{
+        padding: 10px 10px 10px 10px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .error em, .notice em{
+        font-style: normal;
+        font-size: 25px;
+        vertical-align: top;
+      }
+    </style>
 
-      /* IE 5-7 */
-      filter: alpha(opacity=70);
+    <% if RAILS_ENV == "production" %>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23467696-1']);
+        _gaq.push(['_trackPageview']);
 
-      /* Netscape */
-      -moz-opacity: 0.7;
-
-      /* Safari 1.x */
-      -khtml-opacity: 0.7;
-
-      /* Good browsers */
-      opacity: 0.7;
-    }
-  </style>
-  <% if RAILS_ENV == "production" %>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-23467696-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  <% end %>
-</head>
-<body class="transparent_class">
-
-  <div class="showgrid container">
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    <% end %>
+  </head>
+  <body class="home blog">
     <%= yield %>
-  </div>
-
-</body>
+  </body>
 </html>

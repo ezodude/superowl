@@ -1,44 +1,70 @@
-<div class="span-13 intro-container last">
-  <div class="intro">Super Owl</div>
-  <div class="definition">
-    <em>| sooper oul |</em>
-    <br/>
-    - noun
-    <br/>
-    1. Busy <em>commuter</em> who enjoys regular hand picked spoken word audio recommendations, from well informed guides.
-  </div>
-  <div class="registration">
-    <%= form_for(@interested_user) do |f| %>
-      <% if @interested_user.errors.any? %>
-        <div id="errorExplanation">
-          <h2><%= pluralize(@interested_user.errors.count, "error") %> prohibited this post from being saved:</h2>
-          <ul>
-          <% @interested_user.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-          </ul>
-        </div>
-      <% end %>
-      <% if flash[:notice] %>
-        <div class="notice"><%= flash[:notice] %></div>
-      <% end %>
-      <% if flash[:error] %>
-        <div class="error">The email address <%= flash[:error] %></div>
-      <% end %>
-      <p>
-        Coming soon, register for updates:
-        <br/>
-        <%= f.text_field(:email, {:class => "title", :maxlength => 100}) %>
-        <%= f.submit 'Go', :name => 'go' %>
-      </p>
+<div id="wrapper" class="clearfix">
+  <div id="content">
+    <div class="logo">
+      Super Owl
+    </div><!-- logo #end -->
+    <blockquote>
+      audio stories, every week,
+      <br/>to enjoy on every commute
+    </blockquote>
+    <ul>
+      <li>
+        <strong>The best audio stories</strong><br />
+        Story jockeys hand pick the best audio programmes from independent DIY audio makers through to large broadcasters. 
+      </li>
+      <li>
+        <strong>Diverse weekly bundles</strong><br />
+        We like anything with a good story - documentaries, discussions, interviews, fiction, true stories, 
+        archival radio pieces &amp; even the occasional bit of whimsical conversation.
+      </li>
+      <li>
+        <strong>Optimised for commuters</strong><br />
+        The Super Owl service is for busy commuters - a weekly push to your <b>iPhone</b>, adjust by duration and likes or dislikes.
+      </li>
+    </ul>
+    <p class="highlight">
+      Make your tube, metro, bus, train or plane journeys SUPER!
+    </p>
+    <p class="soon">
+      Coming soon, in the meantime register for updates:
+    </p>
+    <% if flash[:notice] %>
+      <div class="notice"><em>*</em> <%= flash[:notice] %></div>
     <% end %>
+    <% if flash[:error] %>
+      <div class="error"><em>*</em> The email address <%= flash[:error] %></div>
+    <% end %>
+    
+    <div class="subscribe">
+      <%= form_for(@interested_user) do |f| %>
+        <p>
+          <%= f.text_field(:email, {:class => "textfield", :maxlength => 100}) %>
+          <%= f.submit('', {:name => 'go', :class => "submit"}) %>
+        </p>
+      <% end %>
+    </div>
+  </div><!-- content #end -->
+  <div id="sidebar">
+    <img src="/images/phoneowl.png" alt="" />
+    <p class="copy">
+      &copy; 2011 <a href="http://said.fm/" target="_blank">Said.fm</a> productions All rights reserved.
+    </p>
   </div>
-</div>
+</div><!-- wrapper #end -->
 
 <script>
   jQuery(document).ready(function() {
     jQuery('#interested_user_email').focus(function(){
-      $(this).val("");
+      if($(this).val() == "enter email address..."){
+        $(this).val("");
+      }
+      return false;
+    });
+    
+    jQuery('#interested_user_email').blur(function(){
+      if($(this).val() == ""){
+        $(this).val("enter email address...");
+      }
       return false;
     });
   });

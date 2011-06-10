@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      /* reset css */
+      html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through} table{border-collapse:collapse;border-spacing:0}
+
+      /* body ------------------------------ */
+      html, body { margin:0; padding:0; font:14px Arial, Helvetica, sans-serif; background-color: #FFFFFF; color:#555;  }
+      a { text-decoration:underline; color:#0a82d8; }
+      a:hover { text-decoration:none; color:#000; }
+
+
+      /* text formating ------------------------------ */
+      p { margin:0; padding:0px 0 15px 0; line-height:22px; color:#555; }
+      p em { line-height:20px; } 
+      code { line-height:18px; }
+
+      ul { margin:0 0 12px 0; padding:0;}
+      ul li { margin:0 0 8px 14px; padding:0; list-style:disc; line-height:22px;   }
+
+      ol { margin:0 0 0 20px; padding:0 0 10px 5px; list-style-type:decimal;  line-height:18px; }
+      ol li ol { margin:8px 0 5px 18px; padding:0; }
+      ol li { margin:0 0 5px 25px; padding:0; list-style:decimal; }
+
+      dl,hr,ol,ul,pre,table,address,fieldset { margin:0; padding:0; }
+
+      blockquote { margin:0; padding:0 0 25px 0px; height:100%; overflow:hidden; color:#000; font:30px 'Cabin Sketch', Arial; }
+
+      /* headings ----- */
+      h2, h3, h4, h5, h6 { margin:30px 0 0px 0; padding:0; line-height:normal; font-weight:normal; font-family:Arial, Helvetica, sans-serif; 	 }
+
+      h1 { font-size:36px; }
+      h2 { font-size:18px; }
+      h3 { font-size:16px; }
+      h4 { font-size:24px; }
+      h5 { font-size:18px; }
+      h6 { font-size:18px; }
+
+      #wrapper { width:940px; margin:0 auto; min-height:500px; position:relative; padding:60px 0 0px 0; }
+      #sidebar { width:400px; float:left; text-align:center; }
+      #content  { width:475px; padding-right:30px; float:right; padding-top:5px; }
+
+      /* content ------------------*/
+      #content .logo { margin-bottom:15px; font-size:65px; font-weight:bold; color:#000; font-family: 'Cabin Sketch', Arial;}
+      #content .logo p { font-size:12px; }
+      #content p.description { margin:0; padding:0;}
+
+      #content p.highlight { margin:12px 0 0 0; color:#008f0a; font-size:14px; font-weight:bold; }
+
+      #sidebar p.copy { margin:0; padding:0; font-size:11px; color:#666; line-height:normal; } 
+      #sidebar p.designby { color:#bababa; margin:0; padding:0; font-size:11px; }
+      #sidebar p.designby a { color:#bababa; text-decoration:none; }
+      #sidebar p.designby a:hover { color:#333; text-decoration:none; }
+
+      /* clearfix ----- */
+      .clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0 }
+      .clearfix:after { clear:both; content:' '; display:block; font-size:0; line-height:0; visibility:hidden; width:0; height:0; }
+      .clearfix { display:inline-block }
+      * html .clearfix { height:1% }
+      .clearfix { display:block; }
+      
+      #content p.highlight { text-decoration:none; color:#0066cc; font-size: 16px;}
+      
+      a { text-decoration:underline; color:#000;}
+      a:hover { text-decoration:none; color:#000; }
+    </style>
+  </head>
+  <body class="home blog">
+    <div id="wrapper" class="clearfix">
+      <div id="content">
+        <div class="logo">
+          Super Owl
+        </div><!-- logo #end -->
+        <blockquote>
+          Thanks so much for registering!
+        </blockquote>
+        <p class="highlight">
+          We're hoping that we can soon make your tube, metro, bus, train or plane journeys SUPER!
+        </p>
+        <ul>
+          <li>
+            <strong>To keep up to date</strong><br />
+            Follow <a href="http://twitter.com/#!/TheSuperOwl" target="_blank">@TheSuperOwl</a> on twitter for updates!
+          </li>
+          <li>
+            <strong>Any Alpha testers - Get in touch</strong><br />
+            If you want to help, please reply to this email.
+            <br/>
+            <em>Selected Alpha tester receive 6 months of free subscription</em>
+          </li>
+        </ul>
+        <p class="highlight">
+          For now, have a brilliant day - The <a href="http://superowl.me/" target="_blank">Super Owl</a> Team :)
+        </p>
+      </div><!-- content #end -->
+      <div id="sidebar">
+        <img src="http://0.0.0.0:3000/images/emailowl.png" alt="" />
+        <p class="copy">
+          &copy; 2011 <a href="http://said.fm/" target="_blank">Said.fm</a> productions All rights reserved.
+        </p>
+      </div>
+    </div><!-- wrapper #end -->
+  </body>
+</html>

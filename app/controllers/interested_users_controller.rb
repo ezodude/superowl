@@ -5,7 +5,7 @@ class InterestedUsersController < ApplicationController
     if interested_user.save
       #InterestedUserMailer.welcome_email(interested_user).deliver
       EmailSignupTracker.track_signup(interested_user.email, ip_address_from(request), time=Time.now.utc.to_i)
-      flash[:notice] = "Super Owl is hatching and we're keeping you in the loop :)"
+      flash[:notice] = "Thanks for registering, we'll get in touch shortly :)"
     else
       flash[:error] = "#{interested_user.errors[:email].first}!"
     end
