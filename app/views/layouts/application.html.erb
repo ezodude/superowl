@@ -10,8 +10,10 @@
   
   <style>
     body { /* author picture needs to get inserted here */
-      background: white url("/images/superowl.jpg") no-repeat 0 0;
+      background: #000 url("/images/superowl.jpg") no-repeat 0 0;
       background-size: 100%;
+      width: 100%;
+      display: table;
     }
     
     .intro-container{
@@ -41,10 +43,7 @@
     
     em{
       font-weight: bold;
-/*      font-size: 16px;
-      font-style: normal;
-      color: white;
-*/    }
+    }
     
     .transparent_class {
       /* IE 8 */
@@ -62,34 +61,7 @@
       /* Good browsers */
       opacity: 0.7;
     }
-/*    div {
-      position: absolute;
-      top: 10%;
-      left: 5%;
-      width: 60%;
-      font: 36px/40px 'Droid Sans', arial, serif;
-      padding: 10px 15px;
-      background: white;
-      opacity:0.7;
-    }
-    div a {
-      color: #E53378;    
-    }
-    div a:hover {
-      color: white;
-      background: #E53378;    
-      text-decoration: none;
-    }
-    div span {
-      text-decoration: underline;
-    }
-  
-    img.logo {
-      position: absolute;
-      bottom: 5%;
-      left: 5%;
-    }
-*/  </style>
+  </style>
   <% if RAILS_ENV == "production" %>
     <script type="text/javascript">
       var _gaq = _gaq || [];
