@@ -1,4 +1,4 @@
-.bundle
-db/*.sqlite3
-log/*.log
-tmp/
+# files and directories to ignore
+.DS_Store
+log/*.*
+tmp/**/*.*
