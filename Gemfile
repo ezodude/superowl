@@ -9,10 +9,10 @@ gem "bson_ext", ">=1.3.1"
 gem "rest-client", ">=1.4.2", :require => "rest_client"
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+# gem 'capistrano'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git:/ /github.com/rails/rails.git'
