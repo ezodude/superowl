@@ -47,9 +47,23 @@
       <% end %>
     </div>
     <p class="social">
-     Follow us on <a href="http://twitter.com/#!/TheSuperOwl" target="_blank">Twitter</a> or 
-     <a href="http://www.facebook.com/TheSuperOwl" target="_blank">Facebook</a> | 
-     <a href="http://blog.superowl.me/" target="_blank">Read our blog</a> 
+      <a href="http://twitter.com/share" 
+        class="twitter-share-button" 
+        data-url="http://superowl.me/"
+        data-count="http://superowl.me/" 
+        data-text="Just found the Super Owl!"
+        data-via="thesuperowl">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <iframe src="http://www.facebook.com/plugins/like.php?href=<%= CGI.escape("http://www.facebook.com/TheSuperOwl") %>&layout=button_count&show_faces=false&width=80&action=like&colorscheme=light&height=21" 
+       scrolling="no" 
+       frameborder="0" 
+       style="border:none; overflow:hidden; width:80px; height:21px;padding-top: 2px;" 
+       allowTransparency="true" 
+       class="like-this"></iframe>
+       <br/>
+      Follow us on <a href="http://twitter.com/#!/TheSuperOwl" target="_blank">Twitter</a> or 
+      <a href="http://www.facebook.com/TheSuperOwl" target="_blank">Facebook</a> | 
+      <a href="http://blog.superowl.me/" target="_blank">Read our blog</a> 
     </p>
   </div><!-- content #end -->
   <div id="sidebar">
