@@ -13,6 +13,7 @@ Superowl::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
     resources :interested_users
+    match "/proto" => redirect("https://hut4app.com/a/583c5831f40/1106"), :as => :current_prototype
 
   # Sample resource route with options:
   #   resources :products do
