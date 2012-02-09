@@ -1,36 +1,32 @@
 <div id="wrapper" class="clearfix">
   <div id="content">
     <div class="logo">
-      Super Owl
+      The Super Times
     </div><!-- logo #end -->
-    <blockquote>
-      The best audio stories from around the web
-    </blockquote>
-    <ul>
-      <li>
-        <strong>An audio service for your iPhone</strong><br />
-        Super Owl is a service for busy commuters (like us), just sync & get going.
-      </li>
-      <li>
-        <strong>The best handpicked audio stories</strong><br/>
-        Our Story Jockeys pick the best audio programs from around the web.
-      </li>
-      <li>
-        <strong>Diverse weekly bundles</strong><br />
-        We like documentaries, discussions, interviews, fiction, true stories, 
-        archival radio pieces &amp; even the occasional bit of whimsical conversation.
-      </li>
-      <li>
-        <strong>Adjustable weekly bundles</strong><br />
-        You adjust bundles by commute duration and likes or dislikes.
-      </li>
-    </ul>
-    <p class="highlight">
-      Make your tube, metro, bus, train or plane journeys SUPER!
-    </p>
-    <p class="soon">
-      Coming soon, in the meantime register for updates:
-    </p>
+
+    <div class="offering">
+      An audio magazine for your iPhone
+    </div>
+    <div class="description">
+      The Super Times app is for busy people (like us) who want great stuff to listen to at the click of a button - just sync &amp; go.
+    </div>
+    
+    <div class="offering">
+      Diverse weekly editions
+    </div>
+    <div class="description">
+      Each week we send you a selection of the best audio documentaries, discussions, stories, 
+      interviews, news, programmes from the archives and all the thought-provoking conversations
+      we can get our hands on.
+    </div>
+
+    <div class="closing">
+      Super listening, for super people
+    </div>
+    <div class="description">
+      <em>We're launching our Beta soon</em>! sign up to be the first to know.
+    </div>
+
     <% if flash[:notice] %>
       <div class="notice"><em>*</em> <%= flash[:notice] %></div>
     <% end %>
@@ -47,38 +43,21 @@
       <% end %>
     </div>
     <p class="social">
-      <a href="http://twitter.com/share" 
-        class="twitter-share-button" 
-        data-url="http://superowl.me/"
-        data-count="http://superowl.me/" 
-        data-text="Just found the Super Owl!"
-        data-via="thesuperowl">Tweet</a>
-      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-      <iframe src="http://www.facebook.com/plugins/like.php?href=<%= CGI.escape("http://www.facebook.com/TheSuperOwl") %>&layout=button_count&show_faces=false&width=80&action=like&colorscheme=light&height=21" 
-       scrolling="no" 
-       frameborder="0" 
-       style="border:none; overflow:hidden; width:80px; height:21px;padding-top: 2px;" 
-       allowTransparency="true" 
-       class="like-this"></iframe>
-       <br/>
-      Follow us on <a href="http://twitter.com/#!/TheSuperOwl" target="_blank">Twitter</a> or 
-      <a href="http://www.facebook.com/TheSuperOwl" target="_blank">Facebook</a> | 
-      <a href="http://blog.superowl.me/" target="_blank">Read our blog</a> | 
-      <a href="http://superowl.storenvy.com/">Store</a>
+      Follow us on <a href="http://twitter.com/#!/TheSuperTimes" target="_blank">Twitter</a> or 
+      <a href="http://www.facebook.com/pages/The-Super-Times/182171455217497" target="_blank">Facebook</a>
+      <br/>
+      <span class="company">&copy; 2012 <a href="http://said.fm/" target="_blank">Said.fm</a> productions all rights reserved.
     </p>
   </div><!-- content #end -->
   <div id="sidebar">
-    <img src="/images/phoneowl-new.png" alt="" />
-    <p class="copy">
-      &copy; 2011 <a href="http://said.fm/" target="_blank">Said.fm</a> productions all rights reserved.
-    </p>
+    <img src="/images/phone.png" alt="" />
   </div>
 </div><!-- wrapper #end -->
 
 <script>
   jQuery(document).ready(function() {
     jQuery('#interested_user_email').focus(function(){
-      if($(this).val() == "enter email address..."){
+      if($(this).val() == "email..."){
         $(this).val("");
       }
       return false;
@@ -86,7 +65,7 @@
     
     jQuery('#interested_user_email').blur(function(){
       if($(this).val() == ""){
-        $(this).val("enter email address...");
+        $(this).val("email...");
       }
       return false;
     });

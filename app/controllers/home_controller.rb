@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     @interested_user = InterestedUser.new
-    @interested_user.email ||= "enter email address..."
+    @interested_user.email ||= "email..."
     
     respond_to do |format|
       format.html  # new.html.erb

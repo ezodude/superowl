@@ -35,12 +35,16 @@ h6 { font-size:18px; }
 
 #wrapper { width:940px; margin:0 auto; min-height:500px; position:relative; padding:25px 0 0px 0; }
 #sidebar { width:400px; float:left; text-align:center; }
-#content  { width:475px; padding-right:30px; float:right; padding-top:5px; }
+#content  { width:475px; padding-right:30px; float:right; padding-top:5px; text-align: center;}
 
 /* content ------------------*/
-#content .logo { margin-bottom:15px; font-size:65px; font-weight:bold; color:#000; font-family: 'Cabin Sketch', Arial;}
-#content .logo p { font-size:12px; }
-#content p.description { margin:0; padding:0;}
+#content .logo { margin-top:30px; margin-bottom:12px; font-size:40px; font-weight:bold; color:#3b84d1; font-family: 'Allan', Arial;}
+
+#content .offering { margin-top:30px; margin-bottom:12px; font-size:30px; font-weight:bold; color:#a80f00; font-family: 'Allan', Arial;}
+#content .closing { margin-top:40px; margin-bottom:12px; font-size:30px; font-weight:bold; color:#000; font-family: 'Allan', Arial;}
+
+#content .description { font-size:14px; margin:10px 0 15px 0; color: #555555}
+#content .description em{ font-style:normal; font-weight:bold}
 
 #content p.highlight { margin:12px 0 0 0; color:#008f0a; font-size:14px; font-weight:bold; }
 
@@ -50,12 +54,12 @@ h6 { font-size:18px; }
 .btn span.btn_l { font-size:18px; padding:10px 5px 13px 30px; background:url(/images/btn_l.png) no-repeat left top; display:block; float:left; color:#fff; text-shadow:#666 -1px -1px } 
 .btn a:hover span { background-position:0 -44px; }
 
-#sidebar p.copy { margin:0; padding:0; font-size:11px; color:#666; line-height:normal; } 
+#sidebar p.copy { margin:0; padding:0; font-size:14px; color:#666; line-height:normal; } 
 #sidebar p.designby { color:#bababa; margin:0; padding:0; font-size:11px; }
 #sidebar p.designby a { color:#bababa; text-decoration:none; }
 #sidebar p.designby a:hover { color:#333; text-decoration:none; }
 
-.subscribe { width:400px; height:42px; clear:both; background:url(/images/subscribe_bg.png) no-repeat left 2px;  }
+.subscribe { margin-left: 35px; width:400px; height:42px; clear:both; background:url(/images/subscribe_bg.png) no-repeat left 2px; text-align: center; }
 .subscribe .submit { background:url(/images/b_go.png) no-repeat left top; width:60px; height:45px; border:none; cursor:pointer; float:right; }
 .subscribe .submit:hover { background-position:0 -45px; }
 .subscribe .textfield { background:#fff; padding:8px; margin:4px 0 0 18px; width:300px; font:16px Arial, Helvetica, sans-serif; color:#777; border:none; }
