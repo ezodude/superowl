@@ -41,9 +41,11 @@ h6 { font-size:18px; }
 #content .logo { margin-top:30px; margin-bottom:12px; font-size:40px; font-weight:bold; color:#3b84d1; font-family: 'Allan', Arial;}
 
 #content .offering { margin-top:30px; margin-bottom:12px; font-size:30px; font-weight:bold; color:#a80f00; font-family: 'Allan', Arial;}
+#content .offering em{ font-style:normal; font-weight:bold}
+
 #content .closing { margin-top:40px; margin-bottom:12px; font-size:30px; font-weight:bold; color:#000; font-family: 'Allan', Arial;}
 
-#content .description { font-size:14px; margin:10px 0 15px 0; color: #555555}
+#content .description { font-size:14px; margin:10px 0 15px 0; color: #555}
 #content .description em{ font-style:normal; font-weight:bold}
 
 #content p.highlight { margin:12px 0 0 0; color:#008f0a; font-size:14px; font-weight:bold; }
