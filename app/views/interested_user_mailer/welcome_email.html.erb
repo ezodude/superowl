@@ -2,111 +2,31 @@
 <html>
   <head>
     <style type="text/css">
-      /* reset css */
-      html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through} table{border-collapse:collapse;border-spacing:0}
-
       /* body ------------------------------ */
-      html, body { margin:0; padding:0; font:14px Arial, Helvetica, sans-serif; background-color: #FFFFFF; color:#555;  }
+      html, body { margin:5; padding:0; font:14px Helvetica, Arial, sans-serif; background-color: #FFFFFF; color:#444;}
       a { text-decoration:underline; color:#0a82d8; }
-      a:hover { text-decoration:none; color:#000; }
-
-
-      /* text formating ------------------------------ */
-      p { margin:0; padding:0px 0 15px 0; line-height:22px; color:#555; }
-      p em { line-height:20px; } 
-      code { line-height:18px; }
-
-      ul { margin:0 0 12px 0; padding:0;}
-      ul li { margin:0 0 8px 14px; padding:0; list-style:disc; line-height:22px;   }
-
-      ol { margin:0 0 0 20px; padding:0 0 10px 5px; list-style-type:decimal;  line-height:18px; }
-      ol li ol { margin:8px 0 5px 18px; padding:0; }
-      ol li { margin:0 0 5px 25px; padding:0; list-style:decimal; }
-
-      dl,hr,ol,ul,pre,table,address,fieldset { margin:0; padding:0; }
-
-      blockquote { margin:0; padding:0 0 25px 0px; height:100%; overflow:hidden; color:#000; font:30px 'Cabin Sketch', Arial; }
-
-      /* headings ----- */
-      h2, h3, h4, h5, h6 { margin:30px 0 0px 0; padding:0; line-height:normal; font-weight:normal; font-family:Arial, Helvetica, sans-serif; 	 }
-
-      h1 { font-size:36px; }
-      h2 { font-size:18px; }
-      h3 { font-size:16px; }
-      h4 { font-size:24px; }
-      h5 { font-size:18px; }
-      h6 { font-size:18px; }
-
-      #wrapper { width:940px; margin:0 auto; min-height:500px; position:relative; padding:25px 0 0px 0; }
-      #sidebar { width:400px; float:left; text-align:center; }
-      #content  { width:475px; padding-right:30px; float:right; padding-top:5px; }
-
-      /* content ------------------*/
-      #content .logo { margin-bottom:15px; font-size:65px; font-weight:bold; color:#000; font-family: 'Cabin Sketch', Arial;}
-      #content .logo p { font-size:12px; }
-      #content p.description { margin:0; padding:0;}
-
-      #content p.highlight { margin:12px 0 0 0; color:#008f0a; font-size:14px; font-weight:bold; }
-
-      #sidebar p.copy { margin:0; padding:0; font-size:11px; color:#666; line-height:normal; } 
-      #sidebar img { margin-top:100px;} 
-      #sidebar p.designby { color:#bababa; margin:0; padding:0; font-size:11px; }
-      #sidebar p.designby a { color:#bababa; text-decoration:none; }
-      #sidebar p.designby a:hover { color:#333; text-decoration:none; }
-
-      /* clearfix ----- */
-      .clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0 }
-      .clearfix:after { clear:both; content:' '; display:block; font-size:0; line-height:0; visibility:hidden; width:0; height:0; }
-      .clearfix { display:inline-block }
-      * html .clearfix { height:1% }
-      .clearfix { display:block; }
-      
-      #content p.highlight { text-decoration:none; color:#0066cc; font-size: 16px;}
-      
-      a { text-decoration:underline; color:#000;}
-      a:hover { text-decoration:none; color:#000; }
+      a:hover { text-decoration:none; color:#0a82d8; }
     </style>
   </head>
   <body class="home blog">
-    <div id="wrapper" class="clearfix">
-      <div id="content">
-        <div class="logo">
-          Super Owl
-        </div><!-- logo #end -->
-        <blockquote>
-          Thanks so much for registering!
-        </blockquote>
-        <p class="highlight">
-          We're hoping that we can soon make your tube, metro, bus, train or plane journeys SUPER!
-        </p>
-        <p class="highlight">
-          For now ...
-        </p>
-        <ul>
-          <li>
-            <strong>Get tips, advice, articles & more for super commuters</strong><br />
-            As the Super Owl audio service is for busy commuters, like us, we'll be bringing you some tips, hacks and updates on
-            our cool <a href="http://blog.superowl.me/" target="_blank">blog</a>.
-          </li>
-          <li>
-            <strong>Keep up to date</strong><br />
-            Follow us on <a href="http://twitter.com/#!/TheSuperOwl" target="_blank">Twitter</a> or 
-            <a href="http://www.facebook.com/TheSuperOwl" target="_blank">Facebook</a>.
-          </li>
-          <li>
-            <strong>Any Beta testers - Get in touch</strong><br />
-            If you want to help, please reply to this email.
-            <br/>
-            <em>Selected Alpha/Beta testers receive 6 months of free subscription</em>
-          </li>
-        </ul>
-        <p class="highlight">
-          Have a brilliant day - The <a href="<%= @url %>/" target="_blank">Super Owl</a> Team :)
-        </p>
-      </div><!-- content #end -->
-      <div id="sidebar">
-        <img src="<%= @url %>/images/emailowl-new.png" alt="" />
-      </div>
-    </div><!-- wrapper #end -->
+    <p>Hey There,</p>
+    <p>
+      <strong>Thanks for signing up!</strong><br/>
+      We will soon be turning spare time into Super Time - from the the dreariest of commutes to the rainiest of afternoons.
+    </p>
+    <p>
+      <strong>For now</strong><br/>
+      You can follow <a href="http://twitter.com/#!/TheSuperTimes">@supertimes</a> on Twitter, 
+      and find us on <a href="http://www.facebook.com/pages/The-Super-Times/182171455217497">Facebook</a>.
+    </p>
+    <p>
+      <strong>For the keen beans</strong><br/>
+      In the coming months, we'll be releasing a <strong>Beta version</strong> of the app.<br/>
+      Keep your eyes peeled for an email, as we'll be back in touch with more details soon.
+    </p>
+
+    <p>Have a great day,</p>
+
+    <p>From the <a href="<%= @url %>/" target="_blank">Super Times</a> team :)</p>
   </body>
 </html>
