@@ -1,0 +1,102 @@
+@cream: #fdfdf1;
+@blue: #34abd1;
+@gray: #999999;
+@red: #a80f00;
+@black: #000000;
+@yellow: #ddcb00;
+@purple: #4e287d;
+@orange: #d04a04;
+@green: #55a800;
+
+::selection {
+  background: pink; }
+
+.super(@color) {
+  font-family: 'Allan', Arial;
+  padding-top: 2px;
+  &:hover {
+    padding-left: 2px;
+    padding-top: 0px;
+    text-shadow: -0.1em 0.05em @color; } }
+
+html, body {
+  background-color: @cream;
+  font-size: 14px;
+  font-family: 'Droid Sans', Arial;
+  text-align: center;
+  color: @gray; }
+body {
+  margin-top: 30px; }
+header { hgroup {
+  margin-top: 30px; } }
+h1 {
+  font-size: 40px;
+  color: @blue;
+  .super(@red); }
+h2 {
+  font-size: 36px;
+  font-family: 'Allan', Arial;
+  color: @red; }
+#appstore {
+  display: block;
+  background-image: url(/images/appstore.png);
+  width: 400px;
+  height: 130px;
+  padding-top: 2px;
+  padding-bottom: 10px; }
+h3 {
+  font-size: 32px;
+  padding-bottom: 5px;
+  font-family: 'Allan', Arial;
+  color: @blue; }
+#what, #how, .features {
+  padding: 40px 20px; }
+#what {
+  background: @red; }
+#how {
+  h3 { color: @red; }
+  color: @orange;
+  background: @yellow; }
+#wrapdemo {
+  display: block;
+  padding-top: 95px;
+  background: url(/images/iphone.png) no-repeat center top;
+  width: 300px;
+  height: 595px;
+  clear: both; }
+#appdemo {
+  margin-left: 32px; }
+h4 {
+  font-family: 'Allan', Arial;
+  color: @blue }
+a {
+  font-family: 'Allan', Arial;
+  color: @blue;
+  &:hover {
+    color: @red;
+    text-decoration: none; } }
+footer {
+  a {
+    font-size: 13px; }
+  p {
+    font-size: 11px; } }
+.feature {
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 12px;
+  font-family: "Droid Sans", Helvetica, Arial;
+  h3 { font-size: 28px;
+    &:before {
+      content: url("/images/bolt.png"); } } }
+#go {
+  margin-right: -20px;
+  padding-bottom: 58px;
+  background: @orange; }
+#tidy {
+  background: @purple; }
+#refresh {
+  margin-right: -20px;
+  background: @green; }
+#fast {
+  padding-bottom: 58px;
+  background: @black; }

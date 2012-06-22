@@ -1,0 +1,24 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/usr/local/bin/npm',
+verbose cli   'build',
+verbose cli   'jeesh',
+verbose cli   'ender-bootstrap' ]
+info using npm@1.0.30
+info using node@v0.4.6
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/rehana/.npmrc
+verbose config file /usr/local/etc/npmrc
+info build /Users/rehana/Sites/superowl/public/javascripts/jeesh
+ERR! Error: ENOENT, No such file or directory '/Users/rehana/Sites/superowl/public/javascripts/jeesh/package.json'
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "build" "jeesh" "ender-bootstrap"
+ERR! cwd /Users/rehana/Sites/superowl/public/javascripts
+ERR! node -v v0.4.6
+ERR! npm -v 1.0.30
+verbose exit [ 1, true ]

@@ -1,75 +1,119 @@
-/* reset css */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through} table{border-collapse:collapse;border-spacing:0}
-
-/* body ------------------------------ */
-html, body { margin:0; padding:0; font:14px Arial, Helvetica, sans-serif; background:url(/images/bodybg.png) repeat-x left top; color:#555;  }
-a { text-decoration:underline; color:#0a82d8; }
-a:hover { text-decoration:none; color:#000; }
-
-
-/* text formating ------------------------------ */
-p { margin:0; padding:0px 0 15px 0; line-height:22px; color:#555; }
-p em { line-height:20px; } 
-code { line-height:18px; }
-
-ul { margin:0 0 12px 0; padding:0;}
-ul li { margin:0 0 8px 14px; padding:0; list-style:disc; line-height:22px;   }
-
-ol { margin:0 0 0 20px; padding:0 0 10px 5px; list-style-type:decimal;  line-height:18px; }
-ol li ol { margin:8px 0 5px 18px; padding:0; }
-ol li { margin:0 0 5px 25px; padding:0; list-style:decimal; }
-
-dl,hr,ol,ul,pre,table,address,fieldset { margin:0; padding:0; }
-
-blockquote { margin:0; padding:0 0 25px 35px; height:100%; overflow:hidden; color:#000; background:url(/images/quote.png) no-repeat left top; font:30px 'Cabin Sketch', Arial; }
-
-/* headings ----- */
-h2, h3, h4, h5, h6 { margin:30px 0 0px 0; padding:0; line-height:normal; font-weight:normal; font-family:Arial, Helvetica, sans-serif; 	 }
-
-h1 { font-size:36px; }
-h2 { font-size:18px; }
-h3 { font-size:16px; }
-h4 { font-size:24px; }
-h5 { font-size:18px; }
-h6 { font-size:18px; }
-
-#wrapper { width:940px; margin:0 auto; min-height:500px; position:relative; padding:25px 0 0px 0; }
-#sidebar { width:400px; float:left; text-align:center; }
-#content  { width:475px; padding-right:30px; float:right; padding-top:5px; text-align: center;}
-
-/* content ------------------*/
-#content .logo { margin-top:30px; margin-bottom:12px; font-size:40px; font-weight:bold; color:#3b84d1; font-family: 'Allan', Arial;}
-
-#content .offering { margin-top:30px; margin-bottom:12px; font-size:30px; font-weight:bold; color:#a80f00; font-family: 'Allan', Arial;}
-#content .offering em{ font-style:normal; font-weight:bold}
-
-#content .closing { margin-top:30px; margin-bottom:12px; font-size:30px; font-weight:bold; color:#000; font-family: 'Allan', Arial;}
-
-#content .description { font-size:14px; margin:10px 0 15px 0; color: #555}
-#content .description em{ font-style:normal; font-weight:bold}
-
-#content p.highlight { margin:12px 0 0 0; color:#008f0a; font-size:14px; font-weight:bold; }
-
-.btn { display:block; width:100%; height:100%; overflow:hidden; }
-.btn span.btn_r { background:url(/images/btn_r.png) no-repeat; width:27px; height:44px; margin-bottom:40px;     }
-.btn span { float:left; display:block; }
-.btn span.btn_l { font-size:18px; padding:10px 5px 13px 30px; background:url(/images/btn_l.png) no-repeat left top; display:block; float:left; color:#fff; text-shadow:#666 -1px -1px } 
-.btn a:hover span { background-position:0 -44px; }
-
-#sidebar p.copy { margin:0; padding:0; font-size:14px; color:#666; line-height:normal; } 
-#sidebar p.designby { color:#bababa; margin:0; padding:0; font-size:11px; }
-#sidebar p.designby a { color:#bababa; text-decoration:none; }
-#sidebar p.designby a:hover { color:#333; text-decoration:none; }
-
-.subscribe { margin-left: 35px; width:400px; height:42px; clear:both; background:url(/images/subscribe_bg.png) no-repeat left 2px; text-align: center; }
-.subscribe .submit { background:url(/images/b_go.png) no-repeat left top; width:60px; height:45px; border:none; cursor:pointer; float:right; }
-.subscribe .submit:hover { background-position:0 -45px; }
-.subscribe .textfield { background:#fff; padding:8px; margin:4px 0 0 18px; width:300px; font:16px Arial, Helvetica, sans-serif; color:#777; border:none; }
-.subscribe .textfield:focus { color:#444;  }
-
-/* clearfix ----- */
-.clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0 }
-.clearfix:after { clear:both; content:' '; display:block; font-size:0; line-height:0; visibility:hidden; width:0; height:0; }
-.clearfix { display:inline-block }
-* html .clearfix { height:1% }
-.clearfix { display:block; }
+::selection {
+  background: pink;
+}
+html,
+body {
+  background-color: #fdfdf1;
+  font-size: 14px;
+  font-family: 'Droid Sans', Arial;
+  text-align: center;
+  color: #999999;
+}
+body {
+  margin-top: 30px;
+}
+header hgroup {
+  margin-top: 30px;
+}
+h1 {
+  font-size: 40px;
+  color: #34abd1;
+  font-family: 'Allan', Arial;
+  padding-top: 2px;
+}
+h1:hover {
+  padding-left: 2px;
+  padding-top: 0px;
+  text-shadow: -0.1em 0.05em #a80f00;
+}
+h2 {
+  font-size: 36px;
+  font-family: 'Allan', Arial;
+  color: #a80f00;
+}
+#appstore {
+  display: block;
+  background-image: url(/images/appstore.png);
+  width: 400px;
+  height: 130px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 32px;
+  padding-bottom: 5px;
+  font-family: 'Allan', Arial;
+  color: #34abd1;
+}
+#what,
+#how,
+.features {
+  padding: 40px 20px;
+}
+#what {
+  background: #a80f00;
+}
+#how {
+  color: #d04a04;
+  background: #ddcb00;
+}
+#how h3 {
+  color: #a80f00;
+}
+#wrapdemo {
+  display: block;
+  padding-top: 95px;
+  background: url(/images/iphone.png) no-repeat center top;
+  width: 300px;
+  height: 595px;
+  clear: both;
+}
+#appdemo {
+  margin-left: 32px;
+}
+h4 {
+  font-family: 'Allan', Arial;
+  color: #34abd1;
+}
+a {
+  font-family: 'Allan', Arial;
+  color: #34abd1;
+}
+a:hover {
+  color: #a80f00;
+  text-decoration: none;
+}
+footer a {
+  font-size: 13px;
+}
+footer p {
+  font-size: 11px;
+}
+.feature {
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 12px;
+  font-family: "Droid Sans", Helvetica, Arial;
+}
+.feature h3 {
+  font-size: 28px;
+}
+.feature h3:before {
+  content: url("/images/bolt.png");
+}
+#go {
+  margin-right: -20px;
+  padding-bottom: 58px;
+  background: #d04a04;
+}
+#tidy {
+  background: #4e287d;
+}
+#refresh {
+  margin-right: -20px;
+  background: #55a800;
+}
+#fast {
+  padding-bottom: 58px;
+  background: #000000;
+}

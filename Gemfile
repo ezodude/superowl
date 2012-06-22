@@ -4,12 +4,12 @@ require 'rubygems'
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
-gem "mongo_mapper", ">=0.8.6"
-gem "bson_ext", ">=1.3.1"
+#gem "mongo_mapper", ">=0.8.6"
+#gem "bson_ext", ">=1.3.1"
 gem "rest-client", ">=1.4.2", :require => "rest_client"
 
 # Use unicorn as the web server
-gem 'unicorn'
+# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -32,6 +32,6 @@ gem 'unicorn'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :development, :test do
+#  gem 'thin'
+end
