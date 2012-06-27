@@ -38,16 +38,19 @@ h3 {
   padding-bottom: 5px;
   font-family: 'Allan', Arial;
   color: @blue; }
-header, #appstore {
+header {
   padding: 30px 20px; }
-#what, #how {
+#what {
   padding: 20px 20px; }
+#how h3 {
+  font-size: 24px;
+  color: @gray; }
 #wrapdemo {
   display: block;
   padding-top: 95px;
   background: url(/images/iphone.png) no-repeat center top;
   width: 300px;
-  height: 595px;
+  height: 500px;
   clear: both; }
 #appdemo {
   margin-left: 32px; }
@@ -80,31 +83,22 @@ ul, li {
   margin: 0; }
 ul {
   padding: 0; }
-#descc, #descc .row {
+#descc, .row {
   padding-bottom: 0;
   margin-bottom: 0; }
-/* #ftsc {
-  background: #a80f00;
-  background: -moz-linear-gradient(left, #a80f00 0%, #a80f00 50%, #55a800 51%, #55a800 100%); 
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a80f00), color-stop(50%,#a80f00), color-stop(51%,#55a800), color-stop(100%,#55a800));
-  background: -webkit-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
-  background: -o-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
-  background: -ms-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
-  background: linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80f00', endColorstr='#55a800',GradientType=1 ); } */
 #go, #tidy, #refresh, #fast {
-  margin: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 5px; }
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;  }
 #go {
   background: @red; }
 #tidy {
-  padding-bottom: 79px;
   background: @yellow; }
 #refresh {
   background: @orange; }
 #fast {
+  padding-top: 58px;
+  padding-bottom: 58px;
   background: @green; }
 footer {
   padding-top: 30px;
