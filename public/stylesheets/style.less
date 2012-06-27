@@ -10,15 +10,11 @@
 
 ::selection {
   background: pink; }
-
 .super(@color) {
   font-family: 'Allan', Arial;
-  padding-top: 2px;
   &:hover {
     padding-left: 2px;
-    padding-top: 0px;
     text-shadow: -0.1em 0.05em @color; } }
-
 html, body {
   background-color: @cream;
   font-size: 14px;
@@ -37,26 +33,15 @@ h2 {
   font-size: 36px;
   font-family: 'Allan', Arial;
   color: @red; }
-#appstore {
-  display: block;
-  background-image: url(/images/appstore.png);
-  width: 400px;
-  height: 130px;
-  padding-top: 2px;
-  padding-bottom: 10px; }
 h3 {
   font-size: 32px;
   padding-bottom: 5px;
   font-family: 'Allan', Arial;
   color: @blue; }
-#what, #how, .features {
-  padding: 40px 20px; }
-#what {
-  background: @red; }
-#how {
-  h3 { color: @red; }
-  color: @orange;
-  background: @yellow; }
+header, #appstore {
+  padding: 30px 20px; }
+#what, #how {
+  padding: 20px 20px; }
 #wrapdemo {
   display: block;
   padding-top: 95px;
@@ -82,21 +67,48 @@ footer {
     font-size: 11px; } }
 .feature {
   color: #fff;
-  padding: 40px 20px;
+  padding: 5px;
   font-size: 12px;
   font-family: "Droid Sans", Helvetica, Arial;
   h3 { font-size: 28px;
+        color: white;
     &:before {
       content: url("/images/bolt.png"); } } }
+li {
+  display: inline; }
+ul, li {
+  margin: 0; }
+ul {
+  padding: 0; }
+#descc, #descc .row {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+/* #ftsc {
+  background: #a80f00;
+  background: -moz-linear-gradient(left, #a80f00 0%, #a80f00 50%, #55a800 51%, #55a800 100%); 
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a80f00), color-stop(50%,#a80f00), color-stop(51%,#55a800), color-stop(100%,#55a800));
+  background: -webkit-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
+  background: -o-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
+  background: -ms-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
+  background: linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80f00', endColorstr='#55a800',GradientType=1 ); } */
+#go, #tidy, #refresh, #fast {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 5px; }
 #go {
-  margin-right: -20px;
-  padding-bottom: 58px;
-  background: @orange; }
+  background: @red; }
 #tidy {
-  background: @purple; }
+  padding-bottom: 79px;
+  background: @yellow; }
 #refresh {
-  margin-right: -20px;
-  background: @green; }
+  background: @orange; }
 #fast {
-  padding-bottom: 58px;
-  background: @black; }
+  background: @green; }
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: black; }
+#wrftcn {
+  background: black; }

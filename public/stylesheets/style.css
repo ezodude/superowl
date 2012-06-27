@@ -19,11 +19,9 @@ h1 {
   font-size: 40px;
   color: #34abd1;
   font-family: 'Allan', Arial;
-  padding-top: 2px;
 }
 h1:hover {
   padding-left: 2px;
-  padding-top: 0px;
   text-shadow: -0.1em 0.05em #a80f00;
 }
 h2 {
@@ -31,34 +29,19 @@ h2 {
   font-family: 'Allan', Arial;
   color: #a80f00;
 }
-#appstore {
-  display: block;
-  background-image: url(/images/appstore.png);
-  width: 400px;
-  height: 130px;
-  padding-top: 2px;
-  padding-bottom: 10px;
-}
 h3 {
   font-size: 32px;
   padding-bottom: 5px;
   font-family: 'Allan', Arial;
   color: #34abd1;
 }
+header,
+#appstore {
+  padding: 30px 20px;
+}
 #what,
-#how,
-.features {
-  padding: 40px 20px;
-}
-#what {
-  background: #a80f00;
-}
 #how {
-  color: #d04a04;
-  background: #ddcb00;
-}
-#how h3 {
-  color: #a80f00;
+  padding: 20px 20px;
 }
 #wrapdemo {
   display: block;
@@ -91,29 +74,68 @@ footer p {
 }
 .feature {
   color: #fff;
-  padding: 40px 20px;
+  padding: 5px;
   font-size: 12px;
   font-family: "Droid Sans", Helvetica, Arial;
 }
 .feature h3 {
   font-size: 28px;
+  color: white;
 }
 .feature h3:before {
   content: url("/images/bolt.png");
 }
+li {
+  display: inline;
+}
+ul,
+li {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+#descc,
+#descc .row {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+/* #ftsc {
+  background: #a80f00;
+  background: -moz-linear-gradient(left, #a80f00 0%, #a80f00 50%, #55a800 51%, #55a800 100%); 
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a80f00), color-stop(50%,#a80f00), color-stop(51%,#55a800), color-stop(100%,#55a800));
+  background: -webkit-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
+  background: -o-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
+  background: -ms-linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%);
+  background: linear-gradient(left, #a80f00 0%,#a80f00 50%,#55a800 51%,#55a800 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80f00', endColorstr='#55a800',GradientType=1 ); } */
+#go,
+#tidy,
+#refresh,
+#fast {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 5px;
+}
 #go {
-  margin-right: -20px;
-  padding-bottom: 58px;
-  background: #d04a04;
+  background: #a80f00;
 }
 #tidy {
-  background: #4e287d;
+  padding-bottom: 79px;
+  background: #ddcb00;
 }
 #refresh {
-  margin-right: -20px;
-  background: #55a800;
+  background: #d04a04;
 }
 #fast {
-  padding-bottom: 58px;
-  background: #000000;
+  background: #55a800;
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: black;
+}
+#wrftcn {
+  background: black;
 }
