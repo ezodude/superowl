@@ -24,14 +24,14 @@ dl,hr,ol,ul,pre,table,address,fieldset { margin:0; padding:0; }
 blockquote { margin:0; padding:0 0 25px 35px; height:100%; overflow:hidden; color:#000; background:url(/images/quote.png) no-repeat left top; font:30px 'Cabin Sketch', Arial; }
 
 /* headings ----- */
-h2, h3, h4, h5, h6 { margin:15px 0 0px 0; padding:0; line-height:normal; font-weight:normal; font-family:Arial, Helvetica, sans-serif; 	 }
+h2, h3, h4, h5, h6 { margin:15px 0 0px 0; padding:0; line-height:normal; font-weight:normal; font-family: Helvetica, Arial, sans-serif;}
 
-h1 { font-size:25px; }
-h2 { font-size:18px; }
-h3 { font-size:16px; }
-h4 { font-size:24px; }
-h5 { font-size:18px; }
-h6 { font-size:18px; }
+h1 { font-size:25px; color: #000;}
+h2 { font-size:18px; color: #000;}
+h3 { font-size:16px; color: #000;}
+h4 { font-size:24px; color: #000;}
+h5 { font-size:18px; color: #000;}
+h6 { font-size:18px; color: #000;}
 
 .home_logo { margin-top:30px; margin-bottom:12px; font-size:40px; font-weight:bold; color:#3b84d1; font-family: 'Allan', Arial;}
 .site_sections_logo { text-align: right; margin-top:10px; margin-bottom:30px; font-size:40px; font-weight:bold; color:#3b84d1; font-family: 'Allan', Arial;}
