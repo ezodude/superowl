@@ -1,8 +1,8 @@
 <div id="wrapper" class="clearfix">
   <div id="content">
-    <div class="logo">
+    <div class="home_logo">
       The Super Times
-    </div><!-- logo #end -->
+    </div>
 
     <div class="offering">
       An audio magazine for your iPhone
@@ -23,31 +23,11 @@
     <div class="closing">
       Super listening, for super people
     </div>
+    
     <div class="description">
-      We're launching soon! sign up to be the first to know.
+      <a href="#"><img src="/images/app_store_badge400.png" alt="Purchase on the app store"/></a>
     </div>
 
-    <% if flash[:notice] %>
-      <div class="notice"><em>*</em> <%= flash[:notice] %></div>
-    <% end %>
-    <% if flash[:error] %>
-      <div class="error"><em>*</em> The email address <%= flash[:error] %></div>
-    <% end %>
-    
-    <div class="subscribe">
-      <%= form_for(@interested_user) do |f| %>
-        <p>
-          <%= f.text_field(:email, {:class => "textfield", :maxlength => 100}) %>
-          <%= f.submit('', {:name => 'go', :class => "submit"}) %>
-        </p>
-      <% end %>
-    </div>
-    <p class="social">
-      Follow us on <a href="http://twitter.com/#!/TheSuperTimes" target="_blank">Twitter</a> or 
-      <a href="http://www.facebook.com/pages/The-Super-Times/182171455217497" target="_blank">Facebook</a>
-      <br/>
-      <span class="company">&copy; 2012 <a href="http://said.fm/" target="_blank">Said.fm</a> productions all rights reserved.
-    </p>
   </div><!-- content #end -->
   <div id="sidebar">
     <img src="/images/phone.png" alt="" />
