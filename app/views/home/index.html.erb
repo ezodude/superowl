@@ -25,7 +25,7 @@
     </div>
     
     <div class="description">
-      <a href="http://itunes.apple.com/app/the-super-times/id509942440">
+      <a id="supertimes-itunes-link" href="http://itunes.apple.com/app/the-super-times/id509942440">
         <img src="/images/app_store_badge400.png" alt="Purchase on the app store"/>
       </a>
     </div>
@@ -38,6 +38,8 @@
 
 <script>
   jQuery(document).ready(function() {
+    mixpanel.track_links('#supertimes-itunes-link', 'iTunes Link Clicked');
+
     jQuery('#interested_user_email').focus(function(){
       if($(this).val() == "email..."){
         $(this).val("");
