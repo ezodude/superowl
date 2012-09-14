@@ -33,7 +33,7 @@ h4 { font-size:24px; color: #000;}
 h5 { font-size:18px; color: #000;}
 h6 { font-size:18px; color: #000;}
 
-.home_logo { margin-top:30px; margin-bottom:12px; font-size:40px; font-weight:bold; color:#3b84d1; font-family: 'Allan', Arial;}
+.home_logo { margin-top:20px; margin-bottom:12px; font-size:40px; font-weight:bold; color:#3b84d1; font-family: 'Allan', Arial;}
 .site_sections_logo { text-align: right; margin-top:10px; margin-bottom:30px; font-size:40px; font-weight:bold; color:#3b84d1; font-family: 'Allan', Arial;}
 .site_sections_logo a{ text-decoration: none;}
 
@@ -48,7 +48,7 @@ h6 { font-size:18px; color: #000;}
 
 #content .closing { margin-top:30px; margin-bottom:12px; font-size:30px; font-weight:bold; color:#000; font-family: 'Allan', Arial;}
 
-#content .description { font-size:14px; margin:10px 0 15px 0; color: #555}
+#content .description { font-size:14px; margin:10px 0 0px 0; color: #555; padding: 0;}
 #content .description em{ font-style:normal; font-weight:bold}
 
 #content p.highlight { margin:12px 0 0 0; color:#008f0a; font-size:14px; font-weight:bold; }
