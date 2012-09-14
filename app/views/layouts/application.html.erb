@@ -9,7 +9,8 @@
     
     <%= stylesheet_link_tag "style" %>
   
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Allan:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <%= csrf_meta_tag %>
@@ -113,5 +114,12 @@
       </p>
       <p id="company_details">&copy; 2012 <a href="http://said.fm/" target="_blank">Said.fm</a> productions all rights reserved.</p>
     </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.carousel').carousel({
+          interval: 4000
+        });
+      });
+    </script>
   </body>
 </html>
