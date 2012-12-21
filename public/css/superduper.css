@@ -1,0 +1,192 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+body { -webkit-font-smoothing: antialiased; background: #fff; text-align: center; font-family: 'Open Sans', sans-serif; font-size-adjust :0.508; font-weight: normal; font-style: normal; color: #444; }
+
+@font-face { font-family: 'Sullivan-Fill'; src: url('../fonts/Sullivan-Fill.otf'), url('../fonts/Sullivan-Fill.ttf') format('truetype'); }
+
+a, a:hover { color: #3b84d1; }
+a:visited { color: #4e287d; }
+
+abbr[title], abbr[data-original-title] { border: none; cursor: auto; }
+
+.zeitgeist { color: #3b84d1; } /* blue */
+.zeitgeist-bg { background-color: #3b84d1; } 
+.stories { color: #a80f00; } /* red */
+.stories-bg { background-color: #a80f00; } 
+.culture { color: #ddcb00; } /* yellow */
+.culture-bg { background-color: #ddcb00; } 
+.brainbending { color: #4e287d; } /* purple */
+.brainbending-bg { background-color: #4e287d; } 
+.books { color: #d04a04; } /* orange */
+.books-bg { background-color: #d04a04; } 
+.science {color: #55a800; } /* green */
+.science-bg { background-color: #55a800; } 
+
+.super-hero { color: #fff; position: relative; overflow: hidden; }
+.super-hero ol.tumblr_posts { position: absolute; z-index: 1; width: 200%; margin: 0 -20%; opacity: .85; }
+.super-hero ol.tumblr_posts li { float: left; list-style-type: none; }
+/*.super-hero ol.tumblr_posts li img { width: 200px!important; }*/
+.super-hero .container { z-index: 2; position: relative; height: 490px; }
+.super-hero.inner { height: 100px; }
+.super-hero h1 { font-family: 'Sullivan-Fill', sans-serif; text-transform: uppercase; font-weight: normal; font-size: 200px; line-height: 510px; text-shadow: 1px 1px 3px rgba(0,0,0,.5); margin: -50px auto 0 auto; padding: 0; letter-spacing: -3px; }
+.super-hero.inner h1 { font-size: 100px; margin: 0; line-height: 100px; letter-spacing: -1px; }
+.super-hero.inner h1 a { color: #fff; }
+.super-hero.inner h1 a:hover { text-decoration: none; opacity: .8; }
+.super-hero.inner h1 a:active { opacity: 1; }
+.super-hero h1 span { letter-spacing: -2px; }
+.super-hero h2 { position: absolute; bottom: 23.5%; width: 100%; margin: 0 auto; max-width: 1170px; font-size: 36px; font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,.05); }
+.super-hero h2 span { display: inline-block; background: #fff; padding: 8px 15px 12px 15px; border-radius: 2px; color: #333; }
+.super-hero p { position: absolute; bottom: 11%; width: 100%; margin: 0 auto; max-width: 1170px; font-size: 24px; color: #fff; font-weight: 700; }
+.super-hero p strong { letter-spacing: -2px; }
+.super-hero p span { opacity: .5; }
+
+.grab-it a { color: #fff; line-height: 120px; font-size: 48px; font-weight: 700; text-shadow: 1px 1px 1px rgba(0,0,0,.2); display: block; letter-spacing: -1px; }
+.grab-it a:hover { text-decoration: none; opacity: .8; }
+.grab-it a:active { opacity: 1; }
+
+.for-real { padding: 75px 0; }
+.for-real h2 { font-size: 72px; line-height: 70px; font-weight: 300; width: 80%; margin: 0 auto; text-shadow: 1px 1px 1px rgba(0,0,0,.1); }
+.for-real p { font-size: 30px; line-height: 35px; width: 85%; margin: 20px auto; font-weight: 300; }
+.for-real ul { margin: 0 auto; }
+.for-real ul li { display: inline-block; width: 33%; height: 200px; margin: 30px 0; }
+.for-real ul li.break { margin-top: 75px; }
+.for-real ul li span { display: block; border-radius: 300px; height: 175px; width: 175px; position: relative; margin: 0 auto; text-indent: -10000em; background-repeat: no-repeat; background-position: 50% 50%; }
+.for-real ul li span.zeitgeist-bg { background-image: url(../img/noun_project_7060.svg); background-size: 105%; background-position: 50% 0; }
+.for-real ul li span.stories-bg { background-image: url(../img/noun_project_3008.svg); background-size: 85%; }
+.for-real ul li span.culture-bg { background-image: url(../img/noun_project_607.svg); background-size: 65%; background-position: 50% 40%; }
+.for-real ul li span.science-bg { background-image: url(../img/noun_project_648.svg); background-size: 45%; background-position: 48% 40%; }
+.for-real ul li span.brainbending-bg { background-image: url(../img/noun_project_6728.svg); background-size: 70%; background-position: 48% 45%; }
+.for-real ul li span.books-bg { background-image: url(../img/noun_project_190.svg); background-size: 40%; background-position: 48% 45%; }
+.for-real ul p { font-size: 18px; line-height: 25px; width: 90%; font-weight: 400; }
+
+.verbose { padding: 60px 0; }
+.verbose h2 { font-size: 60px; line-height: 60px; font-weight: 300; width: 80%; margin: 0 auto; text-shadow: 1px 1px 1px rgba(0,0,0,.1); }
+.verbose h3 { font-size: 24px; line-height: 30px; font-weight: 600; width: 80%; margin: 60px auto 5px auto; }
+.verbose h3 a { color: #a80f00; }
+.verbose h3 a:hover { text-decoration: none; }
+.verbose p { font-size: 18px; line-height: 25px; width: 85%; margin: 0 auto 10px auto; font-weight: 400; }
+
+.for-you { background: #efefef; margin: 30px 0; padding: 60px 0; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede; }
+.for-you h2 { font-size: 54px; font-weight: 300; text-shadow: 1px 1px 1px rgba(0,0,0,.1); }
+.grid { margin-top: 60px; height: 1035px; overflow: hidden; }
+.grid figure { display: block; width: 33.3%; float: left; margin: 0 1px 1px 0; cursor: pointer; overflow: hidden; position: relative; cursor: default; z-index: 1; }
+.grid .second-row { border-top: 1px solid #efefef; top: -3px; position: relative; z-index: 2; }
+.grid .second-row figure { float: right; }
+.grid figure.break { clear: left; }
+.grid figure.wide { width: 66.5%; }
+.grid figure figcaption { position: absolute; font-size: 18px; font-weight: 400; left: auto; width: 60%; height: 20px; padding: 15px 20px; bottom: 0; color: #ddd; background: #18bcbc; text-align: left; background: rgba(0,0,0,.6); color: #fff; font-weight: 700; }
+.grid figure:hover figcaption { bottom: 0px }
+
+.subscribe { padding: 30px 0; position: relative; }
+.subscribe h2 { font-size: 60px; line-height: 70px; width: 75%; margin: 0 auto; font-weight: 300; text-shadow: 1px 1px 1px rgba(0,0,0,.1); }
+.subscribe p { font-size: 30px; margin: 30px auto; width: 90%; line-height: 40px; font-weight: 300; }
+.subscribe p a { display: block; font-weight: 700; width: 33%; border-radius: 6px; margin: 0 auto; color: #fff; position: relative; top: 5px; padding: 30px 0; font-size: 36px; text-align: left; padding-left: 110px; background-image: url(../img/noun_project_1023.svg); background-repeat: no-repeat; background-position: 7% 60%; text-shadow: 1px 1px 1px rgba(0,0,0,.1); }
+.subscribe p a:hover { opacity: .8; text-decoration: none; }
+.subscribe p a:active { opacity: 1; }
+
+.press { margin: 0 0 80px 0; }
+.press blockquote { margin: 40px 0; padding: 0; border: none; }
+.press blockquote p { font-weight: 500; font-size: 36px; line-height: 45px; width: 60%; margin: 0 auto; }
+.press.two-column blockquote p { width: 100%; }
+.press blockquote img { width: 150px; margin: 30px auto; }
+.press .socials { margin-top: 90px; }
+.press h3 { font-size: 30px; text-transform: uppercase; font-weight: normal; margin-top: 40px; color: #ccc; font-family: 'Sullivan-Fill', sans-serif; }
+.press small { color: #333; font-size: 18px; position: relative; top: -20px; }
+
+.covers .container { height: 150px; position: relative; overflow: hidden; }
+.covers p a { display: block; font-size: 36px; font-weight: 700; color: #fff; display: block; margin: 0 auto; position: relative; line-height: 150px; z-index: 2; text-shadow: 1px 1px 1px rgba(0,0,0,.1); }
+.covers p a:hover { text-decoration: none; background: rgba(255,255,255,.2); }
+.covers p a:active { background: rgba(255,255,255,0); }
+.covers ol.tumblr_posts { position: absolute; z-index: 1; width: 200%; margin: 0; opacity: .85; }
+.covers ol.tumblr_posts li { float: left; list-style-type: none; }
+.covers ol.tumblr_posts li img { width: 200px!important; }
+
+.bientot .container { padding: 30px 0; border-top: 1px solid #dedede; text-align: left; }
+.bientot ul { text-align: center; margin: 0 auto; line-height: 30px; }
+.bientot ul li { display: inline; padding: 0 2%; color: #999; font-weight: 600; }
+.bientot a { color: #999; }
+.beintot a:visited { color: #111; }
+.bientot p { text-align: center; margin: 30px 0 20px 0; font-size: 13px; color: #999; }
+
+/* ============================= */
+/* ! Layout for 960 */
+/* ============================= */
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+	
+	.container { width: 960px; }
+	
+	.super-hero ol.tumblr_posts { margin-left: -100px; }
+	.super-hero h1 { font-size: 180px; }
+	
+	.for-real h2 { font-size: 60px; line-height: 60px; }
+	.for-real p { font-size: 28px; }
+	
+	.for-you h2 { font-size: 48px; }
+	.grid { width: 900px; height: 800px; margin: 40px auto; }
+	.grid figure { width: 33%; }
+	.grid figure.p4 { top: -1px; left: -2px; border-top: 1px solid #efefef; }
+	.grid figure.p5 { top: 0; left: -2px; }
+	.grid figure.p6 { top: 0; left: -2px; border-top: 1px solid #efefef; }
+	.grid figure figcaption { width: 70%; }
+	
+	.subscribe h2 { font-size: 48px; line-height: 50px; }
+	.subscribe p { font-size: 25px; line-height: 30px; }
+	.subscribe p a { width: 41%; }
+	
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body { padding: 0; }
+	
+	.super-hero { background-image: url(../img/superbolt-mobile.png); background-repeat: no-repeat; background-position: 50% 50%; }
+	.super-hero.inner { background-image: none; }
+	.super-hero h1 { font-size: 102px; margin-top: 40px; letter-spacing: normal; line-height: 80px; text-shadow: none; }
+	.super-hero.inner h1 { font-size: 60px; }
+	.super-hero h1 span { letter-spacing: normal; }
+	.super-hero h2 { position: relative; top: 10px; }
+	.super-hero h2 span { background: transparent; color: #fff; font-size: 32px; line-height: 35px; text-shadow: none; font-weight: 300; }
+	.super-hero p { font-size: 18px; margin-top: 74px; position: relative; font-weight: 600; }
+	
+	.for-real { padding: 30px 0 10px 0; }
+	.for-real h2 { font-size: 30px; line-height: 35px; font-weight: 400; }
+	.for-real p { font-size: 20px; line-height: 25px; font-weight: 400; }
+	.for-real ul li { display: block; width: 100%; height: auto; margin: 30px 0; }
+	.for-real ul li.break { margin: 30px auto; }
+	.for-real ul li span { width: 100px; height: 100px; }
+	.for-real ul p { font-size: 16px; line-height: 20px; margin: 10px auto; }
+	
+	.verbose h2 { font-size:48px; line-height: 50px; }
+	
+	.subscribe { padding: 0; }
+	.subscribe h2 { font-size: 30px; line-height: 35px; font-weight: 400; }
+	.subscribe p { font-size: 18px; line-height: 22px; font-weight: 400; }
+	.subscribe p a { background-image: none; padding: 25px 20px; font-size: 26px; line-height: 30px; text-align: center; width: 90%; margin-left: -5px; margin-bottom: 30px; }
+	
+	.press h3 { margin-top: 20px; }
+	.press blockquote { margin: 20px 0 30px 0; }
+	.press blockquote p { font-size: 24px; line-height: 30px; width: 80%; }
+	.press blockquote img { width: 110px; margin: 30px auto; }
+	.press .socials { line-height: 35px; margin-top: 50px; }
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}

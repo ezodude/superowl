@@ -1,71 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>The Best Podcasts Weekly for the iPhone | The Super Times</title>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-    <meta name="description" content="The Super Times is an iPhone app that brings you the best podcasts including thought-provoking audio documentaries, stories & interviews as a weekly audio magazine to enjoy anywhere.">
+  <meta charset="utf-8">
+  <title>The Super Times &#8961; An offline podcast radio for your iPhone</title>
+  <meta name="description" content="The Super Times delivers a weekly curated playlist of the best podcasts straight to your iPhone so that you can listen anywhere.">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta name="author" content="Reuben Whitehouse">
 
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    
-    <%= stylesheet_link_tag "style" %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
   
-    <script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Allan:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-    <%= csrf_meta_tag %>
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <link href="css/superduper.css" rel="stylesheet" media="screen">
   
-    <style type="text/css">
-      html, body { 
-        background-color: #fdfdf1; 
-        font-size: 14px ;
-        font-family: 'Droid Sans', Arial;
-        color: #555555;
-      }
-      
-      #sidebar p.copy { color: #555555; font-size: 12px}
-      #content p.highlight { text-decoration:none; color:#444444;}
-      #content p.soon { font-size: 14px;}
-      a { text-decoration:underline; color:#0066cc;}
-      a:hover { text-decoration:none; color:#0066cc; }
-      
-      .notice{ color: #444444; }
-      .error{color: #990000;}
-      .error, .notice{
-        padding: 10px 10px 10px 10px;
-        font-weight: bold;
-        font-size: 16px;
-      }
-      .error em, .notice em{
-        font-style: normal;
-        font-size: 25px;
-        vertical-align: top;
-      }
-      
-      p.social{
-        margin: 20px 0 0 0;
-        font-size: 13px;
-      }
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-      div.footer{
-        margin: 20px 0 0 0;
-        font-size: 13px;
-        text-align: center;
-      }
-
-      div.footer #footer_menu{
-        margin: 20px 0 0 0;
-        font-size: 13px;
-        text-align: center;
-      }
-
-      #company_details{
-        margin: 0 0 0 0;
-        font-size: 12px;
-      }
-    </style>
-
-    <% if RAILS_ENV == "production" %>
+  <script src="js/modernizr.custom.35236.js"></script>
+  
+  <% if RAILS_ENV == "production" %>
       <script type="text/javascript">
 
         var _gaq = _gaq || [];
@@ -99,27 +60,9 @@
         mixpanel.init("dd031f7e9d8924147c98d0b084f5a88f");
       <% end %>
     </script>
-  </head>
-  <body class="home blog">
-    <%= yield %>
-    <div class="footer">
-      <p id="footer_menu">
-        <a href="http://blog.thesupertimes.com/">Blog</a> &nbsp;&nbsp;&nbsp; 
-        <a href="privacy.html">Privacy Policy</a> &nbsp;&nbsp;&nbsp; 
-        <a href="faq.html">FAQs</a> &nbsp;&nbsp;&nbsp; 
-        <a href="publishers.html">Podcast Publishers</a> &nbsp;&nbsp;&nbsp; 
-        <a href="support.html">Support/Contact</a> &nbsp;&nbsp;&nbsp; 
-        <a href="http://twitter.com/#!/TheSuperTimes" target="_blank">Twitter</a> &nbsp;&nbsp;&nbsp; 
-        <a href="http://www.facebook.com/pages/The-Super-Times/182171455217497" target="_blank">Facebook</a>
-      </p>
-      <p id="company_details">&copy; 2012 <a href="http://said.fm/" target="_blank">Said.fm</a> productions all rights reserved.</p>
-    </div>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.carousel').carousel({
-          interval: 4000
-        });
-      });
-    </script>
-  </body>
+  
+</head>
+<body>
+  <%= yield %>
+</body>
 </html>
