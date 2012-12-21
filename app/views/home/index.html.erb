@@ -51,19 +51,5 @@
 <script>
   jQuery(document).ready(function() {
     mixpanel.track_links('#supertimes-itunes-link', 'iTunes Link Clicked');
-
-    jQuery('#interested_user_email').focus(function(){
-      if($(this).val() == "email..."){
-        $(this).val("");
-      }
-      return false;
-    });
-    
-    jQuery('#interested_user_email').blur(function(){
-      if($(this).val() == ""){
-        $(this).val("email...");
-      }
-      return false;
-    });
   });
 </script>
