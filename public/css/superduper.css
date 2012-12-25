@@ -66,7 +66,7 @@ abbr[title], abbr[data-original-title] { border: none; cursor: auto; }
 .verbose h3 { font-size: 24px; line-height: 30px; font-weight: 600; width: 80%; margin: 60px auto 5px auto; }
 .verbose h3 a { color: #a80f00; }
 .verbose h3 a:hover { text-decoration: none; }
-.verbose p { font-size: 18px; line-height: 25px; width: 85%; margin: 0 auto 10px auto; font-weight: 400; }
+.verbose p { font-size: 18px; line-height: 25px; width: 80%; margin: 0 auto 10px auto; font-weight: 400; }
 
 .for-you { background: #efefef; margin: 30px 0; padding: 60px 0; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede; }
 .for-you h2 { font-size: 54px; font-weight: 300; text-shadow: 1px 1px 1px rgba(0,0,0,.1); }
