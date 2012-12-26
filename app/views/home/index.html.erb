@@ -8,7 +8,7 @@
 </section>
 
 <section class="grab-it hidden-phone">
-  <p><a class="science-bg" href="http://itunes.apple.com/app/the-super-times/id509942440">Download free from the App Store</a></p>
+  <p><a id="free-download-link-1" class="science-bg" href="http://itunes.apple.com/app/the-super-times/id509942440">Download free from the App Store</a></p>
 </section>
 
 <section class="for-real">
@@ -51,7 +51,9 @@
 <section class="subscribe">
   <div class="container">
     <h2 class="zeitgeist">Subscribe for just $2.99 (USD) and get 6 months of weekly playlists!</h2>
-    <p><a href="http://itunes.apple.com/app/the-super-times/id509942440" class="science-bg">Download from <br />the Appstore now</a></p>
+    <p>
+      <a id="free-download-link-2" href="http://itunes.apple.com/app/the-super-times/id509942440" class="science-bg">Download from <br/>the Appstore now</a>
+      </p>
     <p>The app is free and comes bundled with a free playlist for you to try it out.<br />
       Subscribe to start getting weekly playlists automatically sent to your iPhone!</p>
   </div>
@@ -167,6 +169,7 @@
 
 <script>
   jQuery(document).ready(function() {
-    mixpanel.track_links('#supertimes-itunes-link', 'iTunes Link Clicked');
+    mixpanel.track_links('#free-download-link-1', 'iTunes Link 1 Clicked');
+    mixpanel.track_links('#free-download-link-2', 'iTunes Link 2 Clicked');
   });
 </script>
